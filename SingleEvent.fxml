@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalenderController">
+   <children>
+      <ImageView fitHeight="498.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@backevent.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backEvent" layoutX="244.0" layoutY="433.0" mnemonicParsing="false" onAction="#backEvent" prefHeight="44.0" prefWidth="113.0" style="-fx-background-color: #C3D4F5;" text="Enter">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="20.0" layoutY="26.0" text="Event Name: " textFill="#b9a5a5">
+         <font>
+            <Font name="Consolas" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="93.0" prefHeight="77.0" prefWidth="218.0" text="Event Description:" textFill="#e8e3e3">
+         <font>
+            <Font name="Helvetica" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="312.0" layoutY="22.0" prefHeight="35.0" prefWidth="200.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="description" layoutX="312.0" layoutY="93.0" prefHeight="163.0" prefWidth="194.0" />
+      <TextField fx:id="day" layoutX="27.0" layoutY="322.0" prefHeight="17.0" prefWidth="113.0" promptText="Day:" />
+      <TextField fx:id="month" layoutX="154.0" layoutY="322.0" prefHeight="25.0" prefWidth="120.0" promptText="Month:" />
+      <TextField fx:id="year" layoutX="300.0" layoutY="322.0" prefHeight="25.0" prefWidth="130.0" promptText="Year:" />
+      <TextField fx:id="hour" layoutX="27.0" layoutY="370.0" promptText="Hour:" />
+      <TextField fx:id="minute" layoutX="200.0" layoutY="370.0" prefHeight="25.0" prefWidth="130.0" promptText="Minute:" />
+      <CheckBox fx:id="pm" layoutX="357.0" layoutY="375.0" mnemonicParsing="false" text="PM" />
+      <DatePicker layoutX="27.0" layoutY="278.0" promptText="Date:" />
+   </children>
+</Pane>

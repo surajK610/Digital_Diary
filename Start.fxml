@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="589.0" style="-fx-background-color: #203649;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainApp_Controller">
+   <children>
+      <Label layoutX="123.0" layoutY="132.0" text="Digital" textFill="#4be1d7">
+         <font>
+            <Font name="Baskerville" size="58.0" />
+         </font>
+      </Label>
+      <Button fx:id="contactsButton" layoutX="46.0" layoutY="258.0" mnemonicParsing="false" onAction="#paneSet" style="-fx-background-color: #3C58FA;" text="Contacts" textFill="#9ed613">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="calenderButton" layoutX="235.0" layoutY="258.0" mnemonicParsing="false" onAction="#paneSet" style="-fx-background-color: #3C58FA #3C58FA;" text="Calendar" textFill="#9ab3db">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="notesButton" layoutX="448.0" layoutY="258.0" mnemonicParsing="false" onAction="#paneSet" style="-fx-background-color: #3C58FA #3C58FA;" text="Notes" textFill="#e08dcb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="107.0" fitWidth="138.0" layoutX="243.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Vanamo_Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="314.0" layoutY="132.0" text="Diary" textFill="#e05353">
+         <font>
+            <Font name="Baskerville" size="58.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend>
+         <topInput>
+            <InnerShadow />
+         </topInput>
+      </Blend>
+   </effect>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>
